@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <!--
+            Elementos do head
+            - title;
+            - script;
+            - base;
+            - link;
+            - meta;
+            - style;
+                A tag <style> deve ser aberta é fechada;
+                Ela serve para aplicar um estilo à página sem a necessidade de 
+                um arquivo externo em CSS;
+        -->
+
+        <meta charset="utf-8">
+        <!--Define as configurações de caracteres para a página-->
+
+        <!--
+             o rel stylesheet serve para aplicar um estilo à página. 
+        -->
+        <link rel="stylesheet" href="estilos.css"> 
+        
+        <style>
+            /*
+                Isso é um comentário em CSS
+            */
+
+            /*
+                O elemento body define as características da tag <body>
+            */
+            body {
+
+                background: #ddd;
+                /* Define a cor de fundo da página; */
+
+                font-family: Arial, sans-serif;
+                /* Define a fonte */
+
+                color: aqua;
+                /* Define a cor do texto*/
+            }
+            
+        </style>
+
+        <script>
+            // Este é um comentário de uma linha em Javascript;
+            /*
+                Este é um comentário de várias linhas em JavaScript;
+            */
+            function escreverNome(){
+                nome.innerHTML = "Pedro Araújo";
+
+                /*
+                Este comando define o id "nome" como o valor 
+                inserido na frente do comando (Pedro Araújo);
+
+                Teste este comando alterando o que ele está recebendo;
+                */
+            }
+
+            window.onload = escreverNome; 
+            // Este comando chama a função assim que a página é carregada;
+        </script>
+
+        <title>
+            Aprendendo mais sobre o elemento Head;
+        </title>
+    </head>
+    <body>
+        <p > 
+            Esta é a unidade 4.
+        </p>
+        <p id="nome"> <!-- Foi atribuído um identificador chamado "nome" à esta tag <p> e será 
+            usado pelo script acima. -->
+
+        </p>
+
+    </body>
+</html>

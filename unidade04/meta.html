@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <!--Metadados são dados referentes à outros dados, que serão lidos pelo navegador;-->
+        <meta charset="utf-8"> <!--Define as configurações de caracteres para a página-->
+        <meta name="author" content="Pedro Araújo"> <!--Define o autor da página-->
+        <meta name="generator" content="VS Code"> <!--Define o software utilizado para criar a página-->
+        <meta name="Keywords" content="HTML, Metadados"> <!--Define as palavras chave da página-->
+        <meta name="description" content="Esta é uma página sobre metatados"> <!--Define uma 
+            descrição para a página--> 
+        <meta name="application-name" content="Unidade 04"> <!--Define o nome da aplicação-->
+
+        <meta http-equiv="refresh" content="10"> <!--A meta refresh é diferente e atualiza a página
+            a cada 10 segundos (atributo content)-->
+
+        <script>
+            function sortNum(){
+                result.innerHTML = Math.random() * 50;
+            }
+
+            window.onload = sortNum;
+            //window.omload chama a função assim que a página é carregada ou recarregada;
+
+            //Math.random() elabora um número aleatório;
+            //Usamos essa função para testar o <meta> refresh;
+        </script>
+
+    </head>
+    <body>
+        <p id="result"> </p>
+    </body>
+
+</html>
