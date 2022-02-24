@@ -8,7 +8,13 @@
 
     <body>
 		<!-- Lista sem ordem --->
-        <ul>
+        <ul type="square"><!--unordened list-->
+            <!--
+                Type determina os símbolos antes dos itens
+                - square = quadradinho
+                - sem type = bolinha    
+                - circle = círculo vazado
+            -->
         	<li>Brasil</li>
         	<li>Argentina</li>
             <li>Uruguai</li>
@@ -16,17 +22,26 @@
         </ul>
         
 		<!-- Lista em ordem --->
-        <ol>
-        	<li>Alonso</li>
+        <ol type="a">
+            <!--
+                Type determina os símbolos antes dos itens
+                - 1 = números
+                - A = letras maiúsculas    
+                - a = letras minúsculas
+                - I = algarismos romanos
+            -->
+            <!--Ordened list-->
+            
+        	<li>Alonso</li> <!--List item-->
         	<li>Vettel</li>
             <li>Massa</li>
             <li>Button</li>
         </ol>        
 
 		<!-- Lista descriptiva --->
-        <dl>
-			<dt>Unidade 01</dt>
-            <dd>
+        <dl><!--Description list-->
+			<dt>Unidade 01</dt><!--Description title-->
+            <dd><!--descrição-->
             	Apresentação do curso
                 Melhores softwares para usar neste curso
             </dd>
