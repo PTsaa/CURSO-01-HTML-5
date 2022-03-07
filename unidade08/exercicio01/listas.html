@@ -9,10 +9,39 @@
                 font-family: sans-serif;
                 font-size: 12 px;
             }
+
+            /*
+                list-style-type define o estilo de cada item na lista
+                é aceito imagem tbm através do list-style-image
+            */
+            li{
+                list-style-image: url("imagem/estrela.png");
+            }
 		</style>
     </head>
     
     <body>
-        
+        <!--Lista ordenada-->
+        <ol>
+            <li>Brasil</li>
+            <li>Argentina</li>
+            <li>Mexico</li>
+            <li>Angola</li>        
+        </ol>
+
+        <!--Lista desordenada-->
+        <!--O atributo "type" em ol pode ser definido como: 
+            - A: Letras maiúsculas;
+            - a: letras minúsculas;
+            - 1: números;
+            - I: algarismos romanos maiúsculos.
+            - i: algarismos romanos minúsculos-->
+        <ul>
+            <li>Brasil</li>
+            <li>Argentina</li>
+            <li>Mexico</li>
+            <li>Angola</li>        
+        </ul>
     </body>
+
 </html>
