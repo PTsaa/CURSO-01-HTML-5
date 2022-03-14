@@ -3,14 +3,40 @@
     <head>
         <meta charset="utf-8">
         <title>Curso HTML5 Essencial</title>
-        
+
+
+        <!--Importação do CSS-->
         <link href="css/estilo.css" rel="stylesheet" media="screen">
     </head>
 
     <body>
         
         <h2>Formulário</h2>
+
+        <!--A tag de formulário tem dois parâmetro: action, que define para onde os dados serão enviados, e method, que define como estes dados serão enviados (serão melhores descritos no curso de PHP)-->
+        <form action="formulario.html" method="post" novalidate><!--Método get tem limitação de 255 caracteres-->
+            <label for="login"> Login</label>
+            <!--type define o tipo do campo, name define o nome-->
+            <input type="text" id="login" name="login" placeholder="login" autocomplete="off" required >
+            <label>Senha</label>
+            <input type="password" id="senha" name="senha" autofocus >
+            <!--O type submit serve para enviar o formulário à página de destino com os dados-->
+            <input type="submit" id="botao" name="botao">
+            
+            <!--Usado para várias opções de repostas-->
+            <input type="checkbox" value="sim" placeholder="checked">
+
+            <!--Usado para resposta única-->
+            <input type="radio" value="dinheiro">
+
+            <select name="estado" id="estado">
+                <option value="1">Rio</option>
+                <option value="2" selected>DF</option>
+
+            </select>
+        </form>
         
+        <!--Existem vários tipos de input-->
     
     </body>
 </html>
