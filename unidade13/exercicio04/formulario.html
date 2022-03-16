@@ -8,20 +8,22 @@
     </head>
 
     <body>
-        
+        <!--O atributo required pode funcionar ou não, por isso deve-se fazer uma obrigação em javascript, também-->
         <h2>Formulário</h2>
         <form action="destino.html" method="post">
             <label for="nome">Nome completo</label>
-            <input type="text" name="nome" id="nome" size="30" maxlength="100">
+            <input type="text" name="nome" id="nome" size="30" maxlength="100" required>
             
+            <!--Placeholder serve para um preenchimento dentro do campo enquanto ele estiver vazio-->
             <label for="telefone">Telefone</label>
-            <input type="tel" name="telefone" id="telefone" size="30" maxlength="30"> 
+            <input type="tel" name="telefone" id="telefone" size="30" maxlength="30" required placeholder="Telefone"> 
             
+            <!--Autofocus define um campo em foco-->
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" size="30" maxlength="60">             
+            <input type="email" name="email" id="email" size="30" maxlength="60" required autofocus>             
             
             <label for="website">Web Site</label>
-            <input type="url" name="website" id="website" size="30" maxlength="60">             
+            <input type="url" name="website" id="website" size="30" maxlength="60" required>             
 
             
             <input type="submit" value="Enviar" id="enviar" name="enviar">
